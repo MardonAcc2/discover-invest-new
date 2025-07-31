@@ -67,10 +67,10 @@ const Jobs = () => {
   return (
  <>
  <div>
- <div className={styles.intro}>
+ <div className={`h-screen w-screen ${styles.intro}`}>
      
  </div>
- <div className={styles.intro_info}>
+ <div className={`h-screen w-screen${styles.intro_info}`}>
          <h2>We unite talents</h2>
      </div>
  <ClientSwiper id={1}/>

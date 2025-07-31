@@ -1,8 +1,6 @@
 .intro{
     position: absolute;
-    width: 100%;
     z-index: 4;
-    height: 100%;
     transform: translate(-50%, 0%) skew(30deg);
     background-color: rgb(203 70 29 / 25%);
     filter: brightness(52%);
@@ -14,7 +12,7 @@
         font-weight: bold;
     font-size: 40px;
     line-height: 60px;
-        position: absolute;
+        
         /* padding: 0rem 8rem; */
         z-index: 5;
         left: 15%;
