@@ -1,5 +1,5 @@
 .intro{
-    position: absolute;
+    
     z-index: 4;
     transform: translate(-50%, 0%) skew(30deg);
     background-color: rgb(203 70 29 / 25%);
@@ -12,7 +12,6 @@
         font-weight: bold;
     font-size: 40px;
     line-height: 60px;
-        position: absolute;
         /* padding: 0rem 8rem; */
         z-index: 5;
         left: 15%;
