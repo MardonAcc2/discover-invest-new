@@ -1,0 +1,200 @@
+.intro{
+    position: absolute;
+    width: 100%;
+    z-index: 4;
+    height: 100%;
+    transform: translate(-50%, 0%) skew(30deg);
+    background-color: rgb(203 70 29 / 25%);
+    filter: brightness(52%);
+    
+
+}
+.intro_info{
+    h2{
+        font-weight: bold;
+    font-size: 40px;
+    line-height: 60px;
+        position: absolute;
+        /* padding: 0rem 8rem; */
+        z-index: 5;
+        left: 15%;
+        /* height: 75%; */
+        top: 60%;
+        /* width: 95%; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* padding: 106px; */
+        /* text-align: center; */
+        color: white;
+    }
+}
+
+.filter{margin:10px 0 50px ;
+    h2{
+        text-align: center;
+        font-weight: 500;
+    font-size: 45px;
+    line-height: 67px;
+    }
+    p{
+        text-align: center;
+        font-size: 16px;
+    line-height: 24px;
+    color: #201E1E;
+    outline: none !important;
+    font-family: "Helvetica", sans-serif;
+    }
+    a{
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 0;
+        border-radius: 4px;
+        text-align: center;
+        color: white;
+margin: 0 auto;
+width: 7rem;
+background-color:#FBB255 ;
+    }
+}
+
+.vacan{
+    margin:10px 0 50px ;
+    h2{
+        
+        font-weight: 500;
+    font-size: 35px;
+    line-height: 67px;
+    
+    }
+    ul{
+        display: grid;
+        grid-template-columns: auto auto;
+        margin-bottom: 50px;
+        padding: 25px;
+        background: #eee;
+        border-radius: 15px;
+    }
+}
+
+.jobsInfo{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:1.5rem;
+    overflow: hidden;
+    img{
+        transition: all 0.35s linear;  
+    }
+    img:hover{
+       scale: 1.1 ;
+       transition: all 0.35s linear;
+    }
+}
+.jobsInfo_description{
+    display: block;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: auto;
+    bottom: 0;
+    padding: 15px;
+    height: auto;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: -webkit-transform 0.35s;
+    transition: transform 0.35s, -webkit-transform 0.35s;
+    padding-left: 20px;
+    background: #000000AB;
+    color: #fff;
+    -webkit-transform: translateY(0);
+    -ms-transform: translateY(0);
+    transform: translateY(0);
+    a{
+        color: #FBB255;
+    }
+    a:hover{
+        text-decoration: underline;
+        transition: all 0.3s linear;
+    }
+}
+.job_single{
+   h2{margin: 50px 0 ;
+       font-size: 30px;
+    text-align: left;
+    margin-bottom: 15px;
+    font-weight: 500;
+   }
+   h3{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin-bottom: 20px;
+   } 
+   span{
+    box-sizing: border-box;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: bolder;
+    outline: none !important;
+   }
+   ul{
+    margin: 0px 0px 35px;
+   }
+   li{
+    margin: 5px 30px;
+       list-style:disc ;
+    box-sizing: border-box;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgb(32, 30, 30);
+    font-family: Helvetica, sans-serif;
+    
+    outline: none !important;
+   }
+   button{
+       background-color: #FBB255;
+       color: #fff;
+       border-radius:3px ;
+       padding: 5px 25px;
+       cursor: pointer; 
+          transition: all 0.3s linear;
+          margin: 0 0 80px;
+   }
+   button:hover{
+    transition: all 0.3s linear;
+       background-color: #d49b3e;
+   }
+}
+
+@media only screen and (max-width:976px) {
+    .jobsInfo{
+        display: grid;
+        grid-template-columns: auto auto ;}
+}
+@media only screen and (max-width:768px) {
+    .jobsInfo{
+        display: grid;
+        grid-template-columns: auto;
+    div{
+        margin: 0 auto;
+    img{
+        margin: 0 auto;
+    }
+    }
+    }
+    .vacan{
+        ul{
+            grid-template-columns: auto;
+            text-align: center;
+            gap:1rem; 
+        }
+    }
+
+}
+

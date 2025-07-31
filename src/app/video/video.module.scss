@@ -1,0 +1,49 @@
+.link_video_title{
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+    margin-bottom: 0px;
+    transition: all 0.3s linear;
+    display: block;
+    height: 54px;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+.link_video_title:hover{
+    color:#FBB255 ;
+}
+.videoblog{
+
+    margin-left: 0px;
+    margin-right: 0px;
+}
+.video_wrp{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    margin: 0 0 50px;
+}
+.videoblog_img{
+    border-radius: 6px;
+    overflow: hidden;
+    
+    transition: all 0.35s linear;
+    img{
+        cursor: pointer;
+        height: 250px;
+        transition: all 0.35s linear;
+    }
+    img:hover{
+        scale: 1.1 ;
+        transition: all 0.35s linear;
+    }
+}

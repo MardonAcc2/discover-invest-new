@@ -1,4 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
+import Script from "next/script";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -19,10 +22,32 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
+
+      <Script id="google-translate-init" strategy="afterInteractive">
+          {`
+            function googleTranslateElementInit() {
+              new google.translate.TranslateElement({
+                pageLanguage: 'en',
+                includedLanguages: 'en,ru,uz',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+              }, 'google_translate_element');
+            }
+          `}
+        </Script>
+
+        {/* Скрипт самого Google Translate */}
+        <Script
+          src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+          strategy="afterInteractive"
+        />
+      
+      <body id="custom_id"
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
+        <Header/>
+       
         {children}
+        <Footer/>
       </body>
     </html>
   );
