@@ -139,7 +139,7 @@ const Jobs = () => {
   return (
     <>
       <div>
-        <div className={`absolute h-screen w-[100%] ${styles.intro}`}></div>
+        <div className={`absolute h-screen w-[70%] ${styles.intro}`}></div>
 
         <div className={`absolute h-screen w-[100%] ${styles.intro_info}`}>
           <h2>We unite talents</h2>
