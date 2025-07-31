@@ -139,9 +139,9 @@ const Jobs = () => {
   return (
     <>
       <div>
-        <div className={`absolute h-screen w-screen ${styles.intro}`}></div>
-        
-        <div className={`absolute h-screen w-screen ${styles.intro_info}`}>
+        <div className={`absolute h-screen w-[100%] ${styles.intro}`}></div>
+
+        <div className={`absolute h-screen w-[100%] ${styles.intro_info}`}>
           <h2>We unite talents</h2>
         </div>
         <ClientSwiper id={1} />
